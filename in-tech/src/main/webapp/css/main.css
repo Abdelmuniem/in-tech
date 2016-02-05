@@ -1,13 +1,13 @@
 * {
-	margin: 0;
-	border: 0;
-	padding: 0;
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 body {
-	background: #FFF;
-	font: 14px/20px Arial, San-Serif;
-	color: #555;
-        margin: 0;
+    background: #FFF;
+    font: 14px/20px Arial, San-Serif;
+    color: #555;
+    margin: 0;
 }
 h1 {
     text-align: center;
@@ -29,29 +29,29 @@ p {
 }
 
 img {
-     text-align: center;
-     max-width: 100%;
-     height: auto;
-     width: auto; 
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    width: auto; 
 }
 a { 
-   color: #FFF; 
-   text-decoration: none;
+    color: #FFF; 
+    text-decoration: none;
 }
 a:link { color: black; }
 a:visited { color: black; }
 a.current { color: black; text-decoration: underline;}
 a:hover, a:focus { color: white; text-decoration: none;}
 header {
-        background: rgba(239,156,0,1);
-	width: 100%;
-        height: 90px;
-        top: 0;
-        left: 0;
-        font: 16px/20px cursive;
-        position: fixed;
-        z-index: 100;
-        opacity: 0.90;
+    background: rgba(239,156,0,1);
+    width: 100%;
+    height: 90px;
+    top: 0;
+    left: 0;
+    font: 16px/20px cursive;
+    position: fixed;
+    z-index: 100;
+    opacity: 0.90;
 }
 #logo {
     margin: 5px 20px 0 150px;
@@ -83,4 +83,91 @@ nav ul li {
     display: inline-block;
     float: left;
     padding: 10px;
+}
+
+section {
+    width: 29%;
+    float: left;
+    margin: 2% 2%;
+    text-align: center;
+}
+
+#doc {
+    margin: 95px 0;
+}
+
+#content {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.blueberry {
+    max-width: 960px;
+    margin-top: 110px;
+}
+
+section.content{
+    width: 100%;
+    height: 50%;
+    margin-top: 120px;
+    border: 5px;
+    border-color: green;
+    background: url(../images/content-bg.png) center;
+}
+
+.clear {
+    clear: both;
+}
+
+/*************  Media !!!!*************/
+@media screen and (max-width: 478px){
+    body{
+        position: absolute;
+    }
+}
+@media screen and (max-width: 740px){
+    header {
+        position: absolute;
+    }
+    #menu-icon {
+        display: inline-block;
+    }
+    nav ul, nav:active ul {
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: rgba(239,156,0,1); /**crimson;*/
+        border: 1px solid #FFF;
+        right: 20px;
+        top: 60px;
+        width: 50%;
+        border-radius: 2px 0 2px 2px;
+    }
+    nav li {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+    }
+    nav:hover ul {
+        display: block;
+    }
+    section {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    article {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    aside {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 }
